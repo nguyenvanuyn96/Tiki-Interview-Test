@@ -22,7 +22,9 @@ class Tiki_Interview_TestTests: XCTestCase {
     }
     
     func testSplitMessageWithEmptyMessage() {
-       //TODO
+        let splitedMessages = TweetSplitProcessed.splitMessage("")
+        
+        XCTAssert(splitedMessages?.count == 0, "Should return empty array splited message when user input empty message!")
     }
     
     func testSplitMessageWithLengthLessThan50Chars() {
