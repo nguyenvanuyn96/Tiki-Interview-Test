@@ -10,10 +10,21 @@
 		11F48B1E51042AA88D726CF4 /* Pods_Tiki_Interview_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445FD338AE3953D41D6CC52C /* Pods_Tiki_Interview_Test.framework */; };
 		F375134C20B559350093C631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375134B20B559350093C631 /* AppDelegate.swift */; };
 		F375134E20B559350093C631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375134D20B559350093C631 /* ViewController.swift */; };
-		F375135120B559350093C631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F375134F20B559350093C631 /* Main.storyboard */; };
 		F375135320B559360093C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F375135220B559360093C631 /* Assets.xcassets */; };
 		F375135620B559360093C631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F375135420B559360093C631 /* LaunchScreen.storyboard */; };
 		F375136120B559360093C631 /* Tiki_Interview_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375136020B559360093C631 /* Tiki_Interview_TestTests.swift */; };
+		F375136F20B5639C0093C631 /* TweetNewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375136E20B5639C0093C631 /* TweetNewsFeedViewController.swift */; };
+		F375137120B563CD0093C631 /* TweetInputMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137020B563CD0093C631 /* TweetInputMessageViewController.swift */; };
+		F375137320B563E70093C631 /* TweetPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137220B563E70093C631 /* TweetPostTableViewCell.swift */; };
+		F375137520B563FF0093C631 /* WelcomeToTweetSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137420B563FF0093C631 /* WelcomeToTweetSplitViewController.swift */; };
+		F375137720B5645B0093C631 /* TweetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137620B5645B0093C631 /* TweetUserInfo.swift */; };
+		F375137920B564720093C631 /* TweetPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137820B564720093C631 /* TweetPostData.swift */; };
+		F375137B20B564860093C631 /* TweetCommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137A20B564860093C631 /* TweetCommentData.swift */; };
+		F375137D20B564B50093C631 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137C20B564B50093C631 /* UIImageViewExtension.swift */; };
+		F375137F20B564CC0093C631 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375137E20B564CC0093C631 /* ArrayExtension.swift */; };
+		F375138120B564DC0093C631 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375138020B564DC0093C631 /* PopupManager.swift */; };
+		F375138320B564EE0093C631 /* DateTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375138220B564EE0093C631 /* DateTimeHelper.swift */; };
+		F375138520B565290093C631 /* TweetSplitProcessed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375138420B565290093C631 /* TweetSplitProcessed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +44,24 @@
 		F375134820B559340093C631 /* Tiki-Interview-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiki-Interview-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F375134B20B559350093C631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F375134D20B559350093C631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F375135020B559350093C631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F375135220B559360093C631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F375135520B559360093C631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F375135720B559360093C631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F375135C20B559360093C631 /* Tiki-Interview-TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiki-Interview-TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F375136020B559360093C631 /* Tiki_Interview_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiki_Interview_TestTests.swift; sourceTree = "<group>"; };
 		F375136220B559360093C631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F375136E20B5639C0093C631 /* TweetNewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetNewsFeedViewController.swift; sourceTree = "<group>"; };
+		F375137020B563CD0093C631 /* TweetInputMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetInputMessageViewController.swift; sourceTree = "<group>"; };
+		F375137220B563E70093C631 /* TweetPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetPostTableViewCell.swift; sourceTree = "<group>"; };
+		F375137420B563FF0093C631 /* WelcomeToTweetSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeToTweetSplitViewController.swift; sourceTree = "<group>"; };
+		F375137620B5645B0093C631 /* TweetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetUserInfo.swift; sourceTree = "<group>"; };
+		F375137820B564720093C631 /* TweetPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetPostData.swift; sourceTree = "<group>"; };
+		F375137A20B564860093C631 /* TweetCommentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCommentData.swift; sourceTree = "<group>"; };
+		F375137C20B564B50093C631 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		F375137E20B564CC0093C631 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		F375138020B564DC0093C631 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		F375138220B564EE0093C631 /* DateTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeHelper.swift; sourceTree = "<group>"; };
+		F375138420B565290093C631 /* TweetSplitProcessed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetSplitProcessed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +123,11 @@
 		F375134A20B559340093C631 /* Tiki-Interview-Test */ = {
 			isa = PBXGroup;
 			children = (
+				F375136D20B563620093C631 /* View */,
+				F375136C20B5635C0093C631 /* Model */,
+				F375136B20B563520093C631 /* Helper */,
 				F375134B20B559350093C631 /* AppDelegate.swift */,
 				F375134D20B559350093C631 /* ViewController.swift */,
-				F375134F20B559350093C631 /* Main.storyboard */,
 				F375135220B559360093C631 /* Assets.xcassets */,
 				F375135420B559360093C631 /* LaunchScreen.storyboard */,
 				F375135720B559360093C631 /* Info.plist */,
@@ -118,6 +142,39 @@
 				F375136220B559360093C631 /* Info.plist */,
 			);
 			path = "Tiki-Interview-TestTests";
+			sourceTree = "<group>";
+		};
+		F375136B20B563520093C631 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F375137C20B564B50093C631 /* UIImageViewExtension.swift */,
+				F375137E20B564CC0093C631 /* ArrayExtension.swift */,
+				F375138020B564DC0093C631 /* PopupManager.swift */,
+				F375138220B564EE0093C631 /* DateTimeHelper.swift */,
+				F375138420B565290093C631 /* TweetSplitProcessed.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F375136C20B5635C0093C631 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F375137620B5645B0093C631 /* TweetUserInfo.swift */,
+				F375137820B564720093C631 /* TweetPostData.swift */,
+				F375137A20B564860093C631 /* TweetCommentData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F375136D20B563620093C631 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F375136E20B5639C0093C631 /* TweetNewsFeedViewController.swift */,
+				F375137020B563CD0093C631 /* TweetInputMessageViewController.swift */,
+				F375137220B563E70093C631 /* TweetPostTableViewCell.swift */,
+				F375137420B563FF0093C631 /* WelcomeToTweetSplitViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +263,6 @@
 			files = (
 				F375135620B559360093C631 /* LaunchScreen.storyboard in Resources */,
 				F375135320B559360093C631 /* Assets.xcassets in Resources */,
-				F375135120B559350093C631 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +334,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F375137D20B564B50093C631 /* UIImageViewExtension.swift in Sources */,
+				F375137B20B564860093C631 /* TweetCommentData.swift in Sources */,
 				F375134E20B559350093C631 /* ViewController.swift in Sources */,
+				F375137720B5645B0093C631 /* TweetUserInfo.swift in Sources */,
+				F375138320B564EE0093C631 /* DateTimeHelper.swift in Sources */,
+				F375137520B563FF0093C631 /* WelcomeToTweetSplitViewController.swift in Sources */,
+				F375137120B563CD0093C631 /* TweetInputMessageViewController.swift in Sources */,
+				F375137320B563E70093C631 /* TweetPostTableViewCell.swift in Sources */,
 				F375134C20B559350093C631 /* AppDelegate.swift in Sources */,
+				F375138520B565290093C631 /* TweetSplitProcessed.swift in Sources */,
+				F375138120B564DC0093C631 /* PopupManager.swift in Sources */,
+				F375136F20B5639C0093C631 /* TweetNewsFeedViewController.swift in Sources */,
+				F375137920B564720093C631 /* TweetPostData.swift in Sources */,
+				F375137F20B564CC0093C631 /* ArrayExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +370,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F375134F20B559350093C631 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F375135020B559350093C631 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F375135420B559360093C631 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +503,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V343TGGME;
 				INFOPLIST_FILE = "Tiki-Interview-Test/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nguyenvanuyn96.Tiki-Interview-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -459,7 +522,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V343TGGME;
 				INFOPLIST_FILE = "Tiki-Interview-Test/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nguyenvanuyn96.Tiki-Interview-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -475,7 +541,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V343TGGME;
 				INFOPLIST_FILE = "Tiki-Interview-TestTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nguyenvanuyn96.Tiki-Interview-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -492,7 +562,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V343TGGME;
 				INFOPLIST_FILE = "Tiki-Interview-TestTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nguyenvanuyn96.Tiki-Interview-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
