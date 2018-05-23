@@ -49,6 +49,8 @@ class TweetSplitProcessed {
         
         if message.isEmpty {
             splitedMessages = [String]()
+        } else if message.count <= maxLengthOfMessage {
+            splitedMessages = [message]
         }
         
         return splitedMessages
