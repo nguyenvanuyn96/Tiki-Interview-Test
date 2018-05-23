@@ -21,9 +21,40 @@ class Tiki_Interview_TestTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSplitMessageWithEmptyMessage() {
+       //TODO
+    }
+    
+    func testSplitMessageWithLengthLessThan50Chars() {
+        //TODO
+    }
+    
+    func testSplitMessageWithLengthEqualTo50Chars() {
+        //TODO
+    }
+    
+    func testSplitMessageWithLengthGreaterThan50CharsAndHasOnlyOneWord() {
+        //TODO
+    }
+    
+    func testSplitMessageWithLengthGreaterThan50CharsAndHasMoreThanOneWordAndHasLengthEachWordLessThan50Chars() {
+        //TODO
+    }
+    
+    func testSplitMessageWithLengthGreaterThan50CharsAndHasMoreThanOneWordAndHasTheFirstWordWhichHasLengthGreaterThan50Chars() {
+        //TODO
+    }
+    
+    func testSplitMessageWithLengthGreaterThan50CharsAndHasMoreThanOneWordAndHasTheEndWordWhichHasLengthGreaterThan50Chars() {
+        //TODO
+    }
+    
+    func testSplitMessageWithLengthGreaterThan50CharsAndHasMoreThanOneWordAndHasAnyMiddleWordWhichHasLengthGreaterThan50Chars() {
+        //TODO
+    }
+    
+    func testSplitMessageWithLengthGreaterThan50CharsAndHasMoreThanOneWordAndHasLengthEachWordLessThan50CharsAndSplitedMessagesAreOptimized() {
+        //TODO
     }
     
     func testPerformanceExample() {
