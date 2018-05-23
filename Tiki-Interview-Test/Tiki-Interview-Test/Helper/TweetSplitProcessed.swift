@@ -47,7 +47,9 @@ class TweetSplitProcessed {
         
         var splitedMessages: [String]? = nil
         
-        //TODO: main process here
+        if message.isEmpty {
+            splitedMessages = [String]()
+        }
         
         return splitedMessages
     }
