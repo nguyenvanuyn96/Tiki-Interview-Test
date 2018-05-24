@@ -34,7 +34,9 @@ class Tiki_Interview_TestTests: XCTestCase {
     }
     
     func testSplitMessageWithLengthEqualTo50Chars() {
-        //TODO
+        let splitedMessages = TweetSplitProcessed.splitMessage("You’re now going to leave the comfortable world of")
+        
+        XCTAssert(splitedMessages?.count == 1, "Should return only one message when user input message which has length equal to 50 characters!")
     }
     
     func testSplitMessageWithLengthGreaterThan50CharsAndHasOnlyOneWord() {
