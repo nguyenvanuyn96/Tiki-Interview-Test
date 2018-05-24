@@ -43,6 +43,7 @@ public extension Int {
 }
 
 class TweetSplitProcessed {
+    
     static func splitMessage(_ message: String, maxLengthOfMessage: Int = 50, isExcludeSurroundingQuotes: Bool = true) -> [String]? {
         
         var splitedMessages: [String]? = nil
@@ -51,6 +52,60 @@ class TweetSplitProcessed {
             splitedMessages = [String]()
         } else if message.count <= maxLengthOfMessage {
             splitedMessages = [message]
+        } else {
+            splitedMessages = [String]()
+            
+            let wordList = message.split(separator: " ")
+            var lengthOfNumberSplitedMessages = Int(ceil(Double(message.count)/Double(maxLengthOfMessage))).digitCount
+            while true {
+                var tempSplitedMessages = [String]()
+                var subMessage = String()
+                var numSplitedMessage: Int = 1
+                var i = 0
+                
+                while (i < wordList.count) {
+                    let lengthOfPartIndicator = (numSplitedMessage.digitCount /* length of part number */ + 1 /* the / */ + lengthOfNumberSplitedMessages /* length of num splited messages */ + 1 /* space */)
+                    
+                    if lengthOfPartIndicator + wordList[i].count > maxLengthOfMessage {//In case the word too long exceed the limit
+                        return nil
+                    }
+                    
+                    if lengthOfPartIndicator + subMessage.count + wordList[i].count <= maxLengthOfMessage {
+                        subMessage.append(" \(String(wordList[i]))")
+                    } else {
+                        numSplitedMessage += 1
+                        tempSplitedMessages.append(subMessage)
+                        
+                        if numSplitedMessage.digitCount > lengthOfNumberSplitedMessages {
+                            break
+                        }
+                        
+                        subMessage = ""//Reset the message
+                        i -= 1//Reset to reviewing the previous word
+                    }
+                    
+                    if i == wordList.count - 1 {//Add the last word to a splited message
+                        numSplitedMessage += 1
+                        tempSplitedMessages.append(subMessage)
+                        
+                        subMessage = ""//Reset the message
+                    }
+                    
+                    i += 1
+                }
+                
+                if numSplitedMessage.digitCount > lengthOfNumberSplitedMessages {
+                    lengthOfNumberSplitedMessages += 1
+                } else if lengthOfNumberSplitedMessages == tempSplitedMessages.count.digitCount {
+                    for i in 1...tempSplitedMessages.count {
+                        splitedMessages?.append("\(i)/\(tempSplitedMessages.count)\(tempSplitedMessages[i-1])")
+                    }
+                    
+                    break
+                } else {
+                    lengthOfNumberSplitedMessages = tempSplitedMessages.count.digitCount
+                }
+            }
         }
         
         return splitedMessages
