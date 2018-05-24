@@ -46,7 +46,14 @@ class Tiki_Interview_TestTests: XCTestCase {
     }
     
     func testSplitMessageWithLengthGreaterThan50CharsAndHasMoreThanOneWordAndHasLengthEachWordLessThan50Chars() {
-        //TODO
+        let splitedMessages = TweetSplitProcessed.splitMessage("Apart from counting words and characters, our online editor can help you to improve word choice and writing style, and, optionally, help you to detect grammar mistakes and plagiarism.")
+        if let splitedMessages = splitedMessages {
+            XCTAssert(splitedMessages.count > 1, "Should return at least 2 message items when user input the message which has length greater than 50 characters and has more than one word and length's each word less than 50 characters!")
+            for message in splitedMessages {
+                XCTAssert(message.count <= 50, "The message splited should be has length less than or equal to 50 characters!")
+            }
+        }
+
     }
     
     func testSplitMessageWithLengthGreaterThan50CharsAndHasMoreThanOneWordAndHasTheFirstWordWhichHasLengthGreaterThan50Chars() {
