@@ -5,20 +5,21 @@ This is the project that I did in the test examination when interviewing at Dwar
 Ứng dụng Tweeter cho phép người dùng nhập 1 đoạn tweet không quá 50 kí tự. 
 Trong trường hợp user nhập văn bản dài hơn 50 kí tự, ứng dụng sẽ cắt thành các sub tweet và post lên mạng xã hội.
 Nếu tweet là một chuỗi các các kí tự liên tiếp, không có khoảng trắng có độ dài lớn hơn 50 thì báo lỗi nhập liệu.
-+Các sub tweet sẽ được thêm tiền tố để chỉ ra sub tweet là tweet thứ tự số bao nhiêu trong tổng số tweet được chia nhỏ.
-+ Các sub tweet được cắt tại kí tự khoảng trắng (whitespace character) và ưu tiên tiệm cận 50 kí tự nếu có thể.
+
+- Các sub tweet sẽ được thêm tiền tố để chỉ ra sub tweet là tweet thứ tự số bao nhiêu trong tổng số tweet được chia nhỏ.
+- Các sub tweet được cắt tại kí tự khoảng trắng (whitespace character) và ưu tiên tiệm cận 50 kí tự nếu có thể.
 Ví dụ: 
 
-    Cho đoạn tweet 1:
+    + Cho đoạn tweet 1:
         “The quick brown fox jumps over the lazy dog”  => 43 kí tự < 50
         Sẽ  thành post: “The quick brown fox jumps over the lazy dog”
 
-    Cho đoạn tweet 2:
+    + Cho đoạn tweet 2:
         “The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog” => 87 kí tự sẽ thành:
         “1/2 The quick brown fox jumps over the lazy dog” => 47 kí tự, không thể thêm “ The” vì sẽ thành 51 kí tự.
         “2/2 The quick brown fox jumps over the lazy dog” => 47 kí tự.
 
-    Cho đoạn tweet 3:
+    + Cho đoạn tweet 3:
         “ThequickbrownfoxjumpsoverthelazydogThequickbrownfoxjumpsoverthelazydog” => 70 kí tự
         Báo lỗi vì Tweet trên là 1 chuỗi span of nonwhite space character > 50
 
