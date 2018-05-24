@@ -56,7 +56,9 @@ class TweetSplitProcessed {
             splitedMessages = [String]()
             
             let wordList = message.split(separator: " ")
+            //predict the minimum number of subMessage can be split
             var lengthOfNumberSplitedMessages = Int(ceil(Double(message.count)/Double(maxLengthOfMessage))).digitCount
+            
             while true {
                 var tempSplitedMessages = [String]()
                 var subMessage = String()

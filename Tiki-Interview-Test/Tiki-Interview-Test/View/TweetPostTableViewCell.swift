@@ -211,7 +211,7 @@ class TweetPostTableViewCell: UITableViewCell {
         self._userFullNameLabel.text = "\(post.owner.firstName) \(post.owner.lastName)"
         //        self._usernameLabel.text = "@\(post.owner.username)"
         self._updatedDateLabel.text = "\(post.updatedDate)"
-        self._messageLabel.text = post.content
+        self._messageLabel.text = "\(post.content) - Length = \(post.content.count)"
     }
     
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
