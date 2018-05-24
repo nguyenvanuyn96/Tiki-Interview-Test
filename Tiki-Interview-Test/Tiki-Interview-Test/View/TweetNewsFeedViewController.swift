@@ -291,11 +291,10 @@ class TweetNewsFeedViewController: UIViewController, UITableViewDataSource, UITa
                     }
                 }
             } else {
-                self._isPushingTweet = false
                 DispatchQueue.main.async {
                     //show popup error that can not split the message because if too long
                     PopupManager.showPopup(title: "Tweet Error", message: "Can not split the message because the message is too long!", completion: {
-                        
+                        self._isPushingTweet = false
                     }, actionHandle: {
                         
                     })
