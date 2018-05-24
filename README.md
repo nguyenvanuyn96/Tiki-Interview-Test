@@ -1,5 +1,5 @@
 # Tiki-Interview-Test
-This is the project that I did in the test examination when interviewing at Dwarves company.
+This is the project that I did in the test examination when interviewing at Tiki company.
 
 # Requirements:
 Ứng dụng Tweeter cho phép người dùng nhập 1 đoạn tweet không quá 50 kí tự. 
