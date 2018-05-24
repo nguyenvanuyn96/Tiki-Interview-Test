@@ -9,18 +9,18 @@ Nếu tweet là một chuỗi các các kí tự liên tiếp, không có khoả
 + Các sub tweet được cắt tại kí tự khoảng trắng (whitespace character) và ưu tiên tiệm cận 50 kí tự nếu có thể.
 Ví dụ: 
 
-Cho đoạn tweet 1:
-“The quick brown fox jumps over the lazy dog”  => 43 kí tự < 50
-Sẽ  thành post: “The quick brown fox jumps over the lazy dog”
+    Cho đoạn tweet 1:
+        “The quick brown fox jumps over the lazy dog”  => 43 kí tự < 50
+        Sẽ  thành post: “The quick brown fox jumps over the lazy dog”
 
-Cho đoạn tweet 2:
-“The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog” => 87 kí tự sẽ thành:
-“1/2 The quick brown fox jumps over the lazy dog” => 47 kí tự, không thể thêm “ The” vì sẽ thành 51 kí tự.
-“2/2 The quick brown fox jumps over the lazy dog” => 47 kí tự.
+    Cho đoạn tweet 2:
+        “The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog” => 87 kí tự sẽ thành:
+        “1/2 The quick brown fox jumps over the lazy dog” => 47 kí tự, không thể thêm “ The” vì sẽ thành 51 kí tự.
+        “2/2 The quick brown fox jumps over the lazy dog” => 47 kí tự.
 
-Cho đoạn tweet 3:
-“ThequickbrownfoxjumpsoverthelazydogThequickbrownfoxjumpsoverthelazydog” => 70 kí tự
-Báo lỗi vì Tweet trên là 1 chuỗi span of nonwhite space character > 50
+    Cho đoạn tweet 3:
+        “ThequickbrownfoxjumpsoverthelazydogThequickbrownfoxjumpsoverthelazydog” => 70 kí tự
+        Báo lỗi vì Tweet trên là 1 chuỗi span of nonwhite space character > 50
 
 Bạn hãy viết ứng dụng iOS cho phép người dùng nhập vào 1 đoạn tweet và thể hiện lên UITableView.
 Cell show ra Tweet/ sub tweet , tổng số kí tự mỗi sub.
@@ -34,13 +34,13 @@ Yêu cầu viết bằng swift 4, up lên github.
 # Algorithm description:
 - Step 1: Split the message into the list words.
 - Step 2: Predict x=ceil(message.count/maxLengthOfMessage).digiCount (x is number of digits of the number of messages (n) can be split). Ex:
-+ If 1<n<10 ==> x=1
-+ If 9<n<100 ==> x=2
-+ If 99<n<1000 ==> x=3
+   + If 1<n<10 ==> x=1
+   + If 9<n<100 ==> x=2
+   + If 99<n<1000 ==> x=3
 - Step 3: Browse the words list and try to split the original message while checking the length limit with the length of splitedMessage include part indicator known.
 - Step 4: Check the number of digits of the number of splitedMessagesArray with x:
-+ if NOT EQUAL: assign x = num of digits of the number of splitedMessagesArray. Then come back the Step 3.
-+ if EQUAL: Browse the splitedMessagesArray and update each of message with the correct part indicator. Then continues Step 5.
+   + if NOT EQUAL: assign x = num of digits of the number of splitedMessagesArray. Then come back the Step 3.
+   + if EQUAL: Browse the splitedMessagesArray and update each of message with the correct part indicator. Then continues Step 5.
 - Step 5: return splitedMessageArray.
 
 
